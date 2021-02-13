@@ -1,0 +1,32 @@
+@import '_config.scss';
+@import '_mixin.scss';
+
+.App{
+    .burgerMenu{
+        display:flex;
+        position:fixed;
+        top:4rem;left:4rem;//responsive
+        z-index:100;
+        #icon{
+            width:4rem;//responsive
+            display:flex;
+            flex-direction:column;
+            justify-content:space-evenly;
+            cursor:pointer;
+            margin-right:2rem;//responsive
+            span{
+                display:block;
+                width:80%;
+                height:6px;
+                background-color:white;
+            }
+        }
+        #text{
+            display:block;
+            color:white;
+            font-family:$theme-font;
+            font-size:3rem;//responsive
+            letter-spacing: 4px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+$theme-font:"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$gradient-blue:rgba(31, 225, 233, 0.8);//1FE1E9
+$gradient-purple:rgba(94, 51, 209, 0.8);//5E33D1
+$gradient-orange:rgba(211, 72, 72, 0.8);//D34848
+$gradient-yellow:rgba(255, 179, 63, 0.8);//FFB33F
+
+@keyframes mix {
+  
+    30% {
+      box-shadow: 0 -1em 2em 3em $gradient-yellow,
+                  4em -1em 2em 3em $gradient-orange,
+                  -4em -2em 2em 2em $gradient-purple,
+                  2em 1em 2em 2em $gradient-blue;
+    }
+    
+    60% {
+      box-shadow: 2em 1em 2em 3em $gradient-blue,
+                  3em -2em 3em 3em $gradient-purple,
+                  -4em 2em 2em 3em $gradient-orange
+                  -2em 1em 2em 3em $gradient-yellow;
+    }
+  
+  }
