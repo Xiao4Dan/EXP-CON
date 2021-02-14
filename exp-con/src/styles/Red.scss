@@ -1,0 +1,46 @@
+.RedSection{
+    background-color:$theme-red;
+    position:relative;
+    #tryBtn{
+        position:absolute;
+        top:4rem;
+        right:4rem;
+    }
+    .redHeading{
+        position:absolute;
+        top:50%;
+        left:8rem;
+        transform:translate(0, -50%);
+        height:50%;
+        width:50%;
+        display:flex;
+        flex-direction:column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        #heading{
+            color:white;
+        }
+    }
+    .redImage{
+        position:absolute;
+        top:50%;
+        right:8rem;
+        transform:translate(0, -50%);
+        height:60%;
+        width:30%;
+        img{
+            height:60%;
+            width:auto;
+        }
+        #red1{
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        #red2{
+            position:absolute;
+            right:0;
+            bottom:0;
+        }
+    }
+}
