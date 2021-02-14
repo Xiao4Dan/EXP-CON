@@ -1,0 +1,66 @@
+.PerksSection{
+    background-color:$theme-black;
+    position:relative;
+    #tryBtn{
+        position:absolute;
+        top:4rem;
+        right:4rem;
+    }
+    .perksWrapper{
+        position:absolute;
+        top:50%;
+        left:0;
+        transform:translate(0, calc(-50% - 8rem)); 
+        margin:8rem;
+        width:calc(100% - 16rem);
+        height:auto;
+        .perksContext{
+            margin-top:8rem;
+            display:grid;
+            grid-template-columns: auto auto auto;
+            .card h4,p{
+                font-family:$theme-font;
+                color:white;
+                font-size:2rem;
+                margin:20px;
+                letter-spacing: 4px;
+                height:50%;
+                width:80%;
+            }
+            .card h4{
+                font-size:3rem;
+                &::before{
+                    content:'';
+                    position:absolute;
+                    width:100px;
+                    height:5px;
+                    transform:translate(0, -2rem);
+                }
+            }
+            .card:nth-child(1){
+                h4{
+                    color:$theme-red;
+                    &::before{
+                        background-color:$theme-red;
+                    }
+                }
+            }
+            .card:nth-child(2){
+                h4{
+                    color:$theme-blue;
+                    &::before{
+                        background-color:$theme-blue;
+                    }
+                }
+            }
+            .card:nth-child(3){
+                h4{
+                    color:$theme-yellow;
+                    &::before{
+                        background-color:$theme-yellow;
+                    }
+                }
+            }
+        }
+    }
+}
