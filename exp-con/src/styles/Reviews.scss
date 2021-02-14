@@ -1,61 +1,62 @@
-.ReviewsSection{
-    background-color:$theme-blue;
-    position:relative;
-    #tryBtn{
-        position:absolute;
-        top:4rem;
-        right:4rem;
+.ReviewsSection {
+    background-color: $theme-blue;
+    position: relative;
+    #tryBtn {
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
     }
-    .reviewsImage{
-        position:absolute;
-        width:30%;
-        height:65%;
-        left:10rem;
-        top:50%;
-        transform:translate(0, -50%);
-        img{
-            width:90%;
-            height:auto;
-            position:absolute;
-            &:nth-child(1){
-                top:0;
-                left:0;
+    .reviewsImage {
+        position: absolute;
+        width: 30%;
+        height: 65%;
+        left: 10rem;
+        top: 50%;
+        transform: translate(0, -50%);
+        img {
+            width: 90%;
+            height: auto;
+            position: absolute;
+            &:nth-child(1) {
+                top: 0;
+                left: 0;
             }
-            &:nth-child(2){
-                right:0;
-                bottom:0;
+            &:nth-child(2) {
+                right: 0;
+                bottom: 0;
             }
         }
     }
-    .reviewsWrapper{
-        position:absolute;
-        right:10rem;
-        width:50%;
-        height:50%;
-        top:50%;
-        transform:translate(0, -50%);
-        .reviewsContext{
-            display:grid;
+    .reviewsWrapper {
+        position: absolute;
+        right: 10rem;
+        width: 50%;
+        height: 50%;
+        top: 50%;
+        transform: translate(0, -50%);
+        .reviewsContext {
+            display: grid;
             grid-template-columns: auto auto auto;
-            align-items:start;
+            align-items: start;
             justify-content: start;
-            height:100%;
-            .card{
-                margin-top:20px;
-                font-family:$theme-font;
-                letter-spacing:4px;
+            height: 100%;
+            .card {
+                margin-top: 20px;
+                font-family: $theme-font;
+                letter-spacing: 4px;
             }
-            .card span{
-                font-size:3rem;
+            .card span {
+                font-size: 3rem;
             }
-            .card p,h4{
-                font-size:2rem;
+            .card p,
+            h4 {
+                font-size: 2rem;
             }
-            .card h4{
-                color:white;
+            .card h4 {
+                color: white;
             }
-            .card p{
-                margin-top:20px;
+            .card p {
+                margin-top: 20px;
             }
         }
     }

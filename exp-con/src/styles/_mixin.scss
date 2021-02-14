@@ -1,6 +1,16 @@
-
-@mixin gradientBackground{
-    background:linear-gradient(90deg, $gradient-yellow,$gradient-orange, $gradient-purple, $gradient-blue, $gradient-purple, $gradient-orange, $gradient-yellow,$gradient-orange, $gradient-purple);
-    background-size:400% 400%;
+@mixin gradientBackground {
+    background: linear-gradient(
+        90deg,
+        $gradient-yellow,
+        $gradient-orange,
+        $gradient-purple,
+        $gradient-blue,
+        $gradient-purple,
+        $gradient-orange,
+        $gradient-yellow,
+        $gradient-orange,
+        $gradient-purple
+    );
+    background-size: 400% 400%;
     animation: gradient 5s ease-in-out infinite;
 }

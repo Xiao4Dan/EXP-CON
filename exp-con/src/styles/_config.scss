@@ -1,42 +1,40 @@
-*{
-    margin:0;
-    padding:0;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+* {
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
+$theme-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$theme-red: #d34848;
+$theme-yellow: #ffb33f;
+$theme-black: #191919;
+$theme-blue: #1fe1e9;
+$theme-purple: #5e33d1;
 
-$theme-font:"Helvetica Neue", Helvetica, Arial, sans-serif;
-$theme-red:#D34848;
-$theme-yellow:#FFB33F;
-$theme-black:#191919;
-$theme-blue:#1FE1E9;
-$theme-purple:#5E33D1;
-
-
-$gradient-blue:rgba(31, 225, 233, 0.9);//1FE1E9
-$gradient-purple:rgba(94, 51, 209, 0.9);//5E33D1
-$gradient-orange:rgba(211, 72, 72, 0.9);//D34848
-$gradient-yellow:rgba(255, 179, 63, 0.9);//FFB33F
+$gradient-blue: rgba(31, 225, 233, 0.9); //1FE1E9
+$gradient-purple: rgba(94, 51, 209, 0.9); //5E33D1
+$gradient-orange: rgba(211, 72, 72, 0.9); //D34848
+$gradient-yellow: rgba(255, 179, 63, 0.9); //FFB33F
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-  25%{
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
     background-position: 25% 50%;
   }
-	50% {
-		background-position: 50% 50%;
-	}
-  75%{
-    background-position:75% 50%;
+  50% {
+    background-position: 50% 50%;
   }
-	100% {
-		background-position: 100% 50%;
-	}
+  75% {
+    background-position: 75% 50%;
   }
+  100% {
+    background-position: 100% 50%;
+  }
+}

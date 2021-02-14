@@ -1,14 +1,19 @@
 import React from "react";
 function Footer(props) {
-
   return (
     <div className="FooterSection">
       <div className="footerContext">
         <div id="footerHeading">
-          <h1 id="heading" className="heading">GET EXP|CON NOW</h1>
-          <h2 id="subHeading" className="subHeading">Purchase and download the app</h2>
+          <h1 id="heading" className="heading">
+            GET EXP|CON NOW
+          </h1>
+          <h2 id="subHeading" className="subHeading">
+            Purchase and download the app
+          </h2>
         </div>
-        <button id="tryBtn" className="gradientBtn">TRY IT NOW</button>
+        <button id="tryBtn" className="gradientBtn">
+          TRY IT NOW
+        </button>
       </div>
       <div className="footerContact">
         <span id="email">&#9993; support@experienceconcerts.co</span>

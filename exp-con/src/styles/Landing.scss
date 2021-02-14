@@ -1,64 +1,65 @@
-@import '_config.scss';
-@import '_mixin.scss';
+@import "_config.scss";
+@import "_mixin.scss";
 
-.heading{
-    font-size:4.5rem;//responsive
-    color:white;
+.heading {
+    font-size: 4.5rem; //responsive
+    color: white;
     letter-spacing: 4px;
-    font-family:$theme-font;
+    font-family: $theme-font;
 }
 
-.subHeading{
-    font-size:3rem;//responsive
-    color:black;
+.subHeading {
+    font-size: 3rem; //responsive
+    color: black;
     letter-spacing: 3px;
-    font-family:$theme-font;
+    font-family: $theme-font;
 }
 
-.gradientBtn{
+.gradientBtn {
     @include gradientBackground;
-    outline:none;
-    border:none;
-    border-radius:80px;
-    font-size:1rem;
-    font-family:$theme-font;
-    letter-spacing:4px;
-    overflow:hidden;
-    height:80px;
-    width:220px;
-    margin:20px;
-    text-decoration:uppercase;
-    color:white;
-    font-weight:bold;
+    outline: none;
+    border: none;
+    border-radius: 80px;
+    font-size: 1rem;
+    font-family: $theme-font;
+    letter-spacing: 4px;
+    overflow: hidden;
+    height: 80px;
+    width: 220px;
+    margin: 20px;
+    text-decoration: uppercase;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
 
-.normalBtn{
-    outline:none;
-    border:none;
-    border-radius:80px;
-    background-color:white;
-    height:80px;
-    width:220px;
-    font-size:1rem;
+.normalBtn {
+    outline: none;
+    border: none;
+    border-radius: 80px;
+    background-color: white;
+    height: 80px;
+    width: 220px;
+    font-size: 1rem;
     mix-blend-mode: screen;
-    letter-spacing:4px;
-    font-weight:bold;
+    letter-spacing: 4px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.LandingPage{
-    height:100%;
-    width:100%;
-    &>div{
-        height:100vh;
-        width:100vw;
+.LandingPage {
+    height: 100%;
+    width: 100%;
+    & > div {
+        height: 100vh;
+        width: 100vw;
     }
 }
 
-@import './Hero.scss';
-@import './Red.scss';
-@import './Yellow.scss';
-@import './Perks.scss';
-@import './Reviews.scss';
-@import './Footer.scss';
-
+@import "./Hero.scss";
+@import "./Red.scss";
+@import "./Yellow.scss";
+@import "./Perks.scss";
+@import "./Reviews.scss";
+@import "./Footer.scss";

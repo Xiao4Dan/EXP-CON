@@ -1,48 +1,51 @@
-.FooterSection{
-    position:relative;
-    min-height:100vh;
-    .footerContext{
-        background-color:$theme-black;
-        width:100vw;
-        height:70vh;
-        display:flex;
-        align-items:center;
+.FooterSection {
+    position: relative;
+    min-height: 100vh;
+    .footerContext {
+        background-color: $theme-black;
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        align-items: center;
         justify-content: space-evenly;
-        #heading{
-            color:$theme-red;
+        #heading {
+            color: $theme-red;
         }
-        #subHeading{
-            margin-top:20px;
-            color:white;
+        #subHeading {
+            margin-top: 20px;
+            color: white;
         }
-        #tryBtn{
-            transform:scale(1.5);
+        #tryBtn {
+            transform: scale(1.5);
         }
     }
-    .footerContact{
-        position:relative;
-        background-color:$theme-purple;
-        width:100vw;
-        height:35vh;
-        display:flex;
-        flex-direction:column;
-        align-items:flex-end;
-        justify-content:space-evenly;
-        color:white;
-        font-family:$theme-font;
+    .footerContact {
+        position: relative;
+        background-color: $theme-purple;
+        width: 100vw;
+        min-height: 35vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        color: white;
+        font-family: $theme-font;
         letter-spacing: 4px;
-        span{
+        span {
             align-self: flex-start;
-            justify-self:flex-start;
-            font-size:2rem;
-            margin:4rem;
+            justify-self: flex-start;
+            font-size: 2rem;
+            margin: 4rem;
         }
-        h4{
-            font-size:3rem;
+        h4 {
+            font-size: 3rem;
             align-self: center;
+            margin-top: 10px;
         }
-        p{
-            font-size:1.5rem;
+        p {
+            margin-top: 15px;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
             align-self: center;
         }
     }

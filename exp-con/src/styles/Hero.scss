@@ -1,67 +1,66 @@
-
-.HeroSection{
-    display:flex;
-    flex-direction:column;
+.HeroSection {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    canvas{
-        position:absolute;
-        top:0;
-        left:0;
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
-    .heroBackground{
-        position:absolute;
-        height:100%;
-        width:100%;
-        top:0;
-        left:0;
-        background-color:black;
-        transition:all 1s ease-in-out;
-        img{
-            position:absolute;
-            height:100%;
-            width:100%;
-            top:0;
-            left:0;
+    .heroBackground {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: black;
+        transition: all 1s ease-in-out;
+        img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
         }
-        z-index:-1;
+        z-index: -1;
     }
-    h1{
-        position:relative;
+    h1 {
+        position: relative;
         text-align: center;
-        z-index:10;
+        z-index: 10;
     }
-    .heroSpec{
-        font-family:$theme-font;
-        width:40%;
-        letter-spacing:2px;
-        margin-top:2rem;
-        line-height:3rem;
-        text-align:center;
-        font-size:2rem;
-        font-weight:300;
-        color:white;
+    .heroSpec {
+        font-family: $theme-font;
+        width: 40%;
+        letter-spacing: 2px;
+        margin-top: 2rem;
+        line-height: 3rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 300;
+        color: white;
     }
-    .heroSliderControl{
-        position:absolute;
-        bottom:30px;
-        left:calc(50% - 40px);
-        height:20px;
-        width:80px;
-        display:flex;
+    .heroSliderControl {
+        position: absolute;
+        bottom: 30px;
+        left: calc(50% - 40px);
+        height: 20px;
+        width: 80px;
+        display: flex;
         justify-content: space-between;
-        span{
-            height:16px;
-            width:16px;
-            border-radius:9px;
-            cursor:pointer;
-            border:2px solid white;
-            background-color:transparent;
-            &:hover{
-                border:2px solid lightgrey;
+        span {
+            height: 16px;
+            width: 16px;
+            border-radius: 9px;
+            cursor: pointer;
+            border: 2px solid white;
+            background-color: transparent;
+            &:hover {
+                border: 2px solid lightgrey;
             }
-            &.active{
-                background-color:white;
+            &.active {
+                background-color: white;
             }
         }
     }

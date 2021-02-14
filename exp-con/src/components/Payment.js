@@ -2,8 +2,8 @@ import React from "react";
 function Payment(props) {
 
   return (
-    <div className="PricingPage">
-        Pricing
+    <div className="PaymentPage">
+        Payment
     </div>
   );
 }

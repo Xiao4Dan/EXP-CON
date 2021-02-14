@@ -17,8 +17,8 @@ function Hero(props) {
 
   useEffect(() => {
     const item = document.querySelector(".heroBackground");
-    while(item.firstChild){
-        item.removeChild(item.firstChild);//remove duplicate
+    while (item.firstChild) {
+      item.removeChild(item.firstChild); //remove duplicate
     }
     const animation = new hoverEffect({
       parent: document.querySelector(".heroBackground"),
@@ -27,7 +27,7 @@ function Hero(props) {
       image2: heroImages[heroIndex],
       displacementImage: heroImages[(heroIndex + 2) % 3],
     });
-    animation.next();//new canvas transit
+    animation.next(); //new canvas transit
   }, [heroIndex]);
 
   return (
@@ -43,11 +43,19 @@ function Hero(props) {
       <div className="heroSliderControl">
         <span
           id="hero1"
-          className="active"
+          className={`${heroIndex === 0 ? "active" : ""}`}
           onClick={() => setHeroIndex(0)}
         ></span>
-        <span id="hero2" onClick={() => setHeroIndex(1)}></span>
-        <span id="hero3" onClick={() => setHeroIndex(2)}></span>
+        <span
+          id="hero2"
+          className={`${heroIndex === 1 ? "active" : ""}`}
+          onClick={() => setHeroIndex(1)}
+        ></span>
+        <span
+          id="hero3"
+          className={`${heroIndex === 2 ? "active" : ""}`}
+          onClick={() => setHeroIndex(2)}
+        ></span>
       </div>
       <div className="heroBackground"></div>
     </div>
